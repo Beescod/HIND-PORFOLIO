@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ClassValue, clsx } from "clsx";
-import { GlareCard } from "./ui/glare-card";
-import { twMerge } from "tailwind-merge";
 import Typed from "typed.js"; // Import Typed.js
-import './Home.css';
+import './Hhom.css';
 import aboutImage from '../assets/About001.jpg';
 import aboutImage2 from '../assets/About002.png';
 import portfolio001 from '../assets/portfolio 001.jpg';
@@ -13,7 +10,7 @@ import portfolio004 from '../assets/portfolio 004.jpg';
 import portfolio005 from '../assets/portfolio 005.jpg';
 import portfolio006 from '../assets/portfolio 006.jpg';
 
-const Home = () => {
+const Hhom = () => {
     const aboutRef = useRef(null);
 
     useEffect(() => {
@@ -70,13 +67,11 @@ const Home = () => {
     }, []);
 
 
-
-
     return (
         <>
             <div className="background"></div> {/* Fixed background */}
 
-            <div className="home-content">
+            <div className="Hhom-content">
                 <h1>TRANSFORM YOUR BRAND<br />WITH A STUNNING NEW DESIGN</h1>
             </div>
             <div className="about-container" ref={aboutRef}>
@@ -86,9 +81,9 @@ const Home = () => {
                         <h2>HI, I’M HIND</h2>
                         <h4>
                             I am a 24-year-old Freelancer in social media content creation and strategy.
-                            I graduated from ISEFAC PARIS private school with a degree in project     management, event management, public relations, and communication.
+                            I graduated from ISEFAC PARIS private school with a degree in project management, event management, public relations, and communication.
                             I am extremely passionate and driven about my job.
-                            Here's a glimpse of what I've done in terms of communication and graphic     content.
+                            Here's a glimpse of what I've done in terms of communication and graphic content.
                         </h4>
                     </div>
                     <div className="img">
@@ -250,7 +245,7 @@ const Home = () => {
 
                 </div>
 
-            </div >
+            </div>
 
 
         </>
@@ -258,4 +253,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Hhom;
